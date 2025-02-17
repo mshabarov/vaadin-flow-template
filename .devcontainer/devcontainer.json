@@ -16,6 +16,5 @@
       ]
     }
   },
-  "forwardPorts": [8080],
-  "postCreateCommand": "mvn clean install"
+  "forwardPorts": [8080]
 }
