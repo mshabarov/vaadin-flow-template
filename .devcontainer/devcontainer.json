@@ -1,0 +1,21 @@
+{
+  "name": "Java 17 Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/java:17", 
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-maven",
+        "redhat.vscode-xml",
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "mvn clean install"
+}
